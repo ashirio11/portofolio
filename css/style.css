@@ -1,0 +1,373 @@
+.no-scroll {
+    overflow: hidden;
+  }
+  
+
+.title{
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+    font-size: 38px;
+    text-align: center;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 50%; /* 横線の幅 */
+    height: 4px; /* 縦線の高さ */
+    background-color: #BCE2E8; /* 縦線の色 */
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.header-inner{
+    padding: 30px 60px 30px 40px;
+}
+
+.header-items{
+    display: flex;
+    gap: 75px;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+.header-item{
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+}
+
+.LP-inner{
+    width: 100%;
+    height: 873px;
+    display: flex;
+    justify-content: center; /* 横方向の中央揃え */
+    align-items: center; /* 縦方向の中央揃え */
+    transition: background-color 1s;
+}  
+
+.LP-content{
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    text-align: center;
+}
+
+.LP-text, .LP-img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.LP-text{
+    margin-right: 60px;
+    opacity: 0;
+    transform: translateX(-100px); /* 左に100px移動した状態から開始 */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* フェードインと移動のトランジション */
+}
+.fade-in {
+    opacity: 1;
+    transform: translateX(0); /* 元の位置に移動 */
+}
+
+
+
+.LP-title{
+    color: #000;
+    font-family: Inter;
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: fit-content;
+}
+
+.LP-subtitle{
+    color: #000;
+    font-family: Inter;
+    margin-left: 30px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    display: inline-block;
+}
+
+.LP-subtitle::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 8px; /* 縦線の幅 */
+    height: 100%; /* 縦線の高さ */
+    background-color: black; /* 縦線の色 */
+    top:-2px;
+    left:-20px; 
+}
+
+.LP-img{
+    width: 686px;
+    position: relative;
+}
+
+.LP-click{
+    position: absolute;
+    right: 320px;
+    bottom: 130px;
+}
+
+.button-items{
+    position: absolute;
+    right: 100px;
+    bottom: 200px;
+    display: flex;
+    gap: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 5s, visibility 5s; /* 2秒かけて表示 */
+}
+
+.button-item{
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    border: solid #000;
+}
+
+.button-item:hover {
+box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+transform: scale(1.2);
+}
+
+.button-red{
+        background: #FFA07A;
+}
+
+.button-blue{
+    background: #BCE2E8;
+}
+.button-green{
+    background: #9ACD32;
+}
+
+.active-red{
+    background-color: #FFA07A;
+}
+.active-blue{
+    background-color: #BCE2E8;
+}
+.active-green{
+    background-color: #9ACD32;
+}
+
+.active-red1:hover{
+    color: #FFA07A;
+}
+.active-blue1:hover{
+    color: #BCE2E8;
+}
+.active-green1:hover{
+    color: #9ACD32;
+}
+.active-red2:after{
+    background-color: #FFA07A;
+}
+.active-blue2:after{
+    background-color: #BCE2E8;
+}
+.active-green2:after{
+    background-color: #9ACD32;
+}
+
+
+
+.about-inner{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: rgba(187, 187, 187, 0.05);
+}
+
+.about-content{
+    padding-left: 340px;
+    padding-right: 340px;
+}
+
+.about-title{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-intro{
+    display: flex;
+    gap: 165px;
+    margin-top: 60px;
+}
+
+.about-intro-text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+
+.about-intro-img img{
+    width: 315px;
+}
+
+.about-intro-item{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400; 
+}
+
+.about-explain{
+    margin-top: 50px;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.create-inner{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.create-title{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-inner{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: rgba(187, 187, 187, 0.05);
+}
+
+.skills-title{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-text{
+    margin-top: 60px;
+    padding-left: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.skill-text-item{
+
+}
+
+.skill-text-item-main{
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.skill-text-item-sub{
+    margin-top: 8px;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.sns-inner{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.sns-title{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sns-items{
+    margin-top: 80px;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sns-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sns-text{
+    color: #000;
+}
+
+.sns-icon img{
+    width: 50px;
+    height: 50px;
+}
+
+.footer-inner{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-text{
+    text-align: center;
+}
+
+.page-top {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transform: rotate(90deg);
+    font-size: 25px;
+    line-height: 1.5rem;
+    color: #737373;
+    padding: 10px 0 0 35px;
+    border-top: solid 3px;
+     /*デフォルトで非表示にする*/
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 1s; /* 2秒かけて表示 */
+}
+.page-top::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: -1px;
+    width: 20px;
+    border-top: solid 3px;
+    transform: rotate(35deg);
+    transform-origin: left top;
+}
+
+.active{
+    opacity: 1;
+    visibility: visible;
+  }
