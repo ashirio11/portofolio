@@ -37,6 +37,7 @@ $(document).ready(function() {
       $('.footer-inner').removeClass('active-blue active-green').addClass('active-red');
       $('.header-item').removeClass('active-blue1 active-green1').addClass('active-red1');
       $('.title').removeClass('active-blue2 active-green2').addClass('active-red2');
+      $('.drawer-content').removeClass('active-blue active-green').addClass('active-red');
   });
 
   $('.button-blue').on('click', function() {
@@ -44,6 +45,7 @@ $(document).ready(function() {
       $('.footer-inner').removeClass('active-red active-green').addClass('active-blue');
       $('.header-item').removeClass('active-red1 active-green1').addClass('active-blue1');
       $('.title').removeClass('active-red2 active-green2').addClass('active-blue2');
+      $('.drawer-content').removeClass('active-red active-green').addClass('active-blue');
   });
 
   $('.button-green').on('click', function() {
@@ -51,6 +53,7 @@ $(document).ready(function() {
       $('.footer-inner').removeClass('active-red active-blue').addClass('active-green');
       $('.header-item').removeClass('active-blue1 active-red1').addClass('active-green1');
       $('.title').removeClass('active-blue2 active-red2').addClass('active-green2');
+      $('.drawer-content').removeClass('active-blue active-red').addClass('active-green');
   });
 });
 
@@ -106,3 +109,16 @@ $(function() {
     textObserver.observe(this);
   });
 });
+
+jQuery("#js-drawer-icon").on("click",function (e){
+  e.preventDefault();
+  jQuery("#js-drawer-icon").toggleClass("is-checked");
+  jQuery("#js-drawer-content").toggleClass("is-checked");
+})
+$(document).ready(function() {
+  $('.drawer-content__link').on('click', function() {
+    $('#js-drawer-content').removeClass('is-checked');
+    $('.drawer-icon').removeClass('is-checked');
+  });
+});
+
