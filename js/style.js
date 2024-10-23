@@ -95,6 +95,7 @@ $(function() {
         // ボタンのアニメーションが完了したときにスクロールを再度有効にする
         $(entry.target).on('transitionend', function() {
           $('body').removeClass('no-scroll');
+          $('.drawer-icon').removeClass('disabled'); 
         });
       }
     });
@@ -114,11 +115,14 @@ jQuery("#js-drawer-icon").on("click",function (e){
   e.preventDefault();
   jQuery("#js-drawer-icon").toggleClass("is-checked");
   jQuery("#js-drawer-content").toggleClass("is-checked");
+  $('body').toggleClass('no-scroll');
 })
+
 $(document).ready(function() {
   $('.drawer-content__link').on('click', function() {
     $('#js-drawer-content').removeClass('is-checked');
     $('.drawer-icon').removeClass('is-checked');
+    $('body').removeClass('no-scroll');
   });
 });
 
