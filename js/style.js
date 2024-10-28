@@ -126,3 +126,23 @@ $(document).ready(function() {
   });
 });
 
+//スライダーの作成
+const swiper = new Swiper('#js-gallery-swiper', {
+  spaceBetween: 0,
+  // Optional parameters
+  loop: true,
+  slidesPerView: 3, // ここで一度に表示するスライドの数を設定します
+
+  // If we need pagination
+  pagination: {
+    el: '#js-gallery-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '#js-gallery-next',
+    prevEl: '#js-gallery-prev',
+  },
+});
+
+
