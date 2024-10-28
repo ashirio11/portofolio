@@ -6,6 +6,10 @@
     <title>Document</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <header>
@@ -87,7 +91,49 @@
         <div id="create" class="create">
             <div class="create-inner">
                 <div class="create-content">
-                    <div class="create-title title active-blue2">create</div>
+                    <h2 class="create-title title active-blue2">create</h2>
+                    <div class="create-description">作製した成果物です。このポートフォリオサイトも自作です。</div>
+                      <!-- Slider main container -->
+<div id="js-gallery-swiper" class="swiper gallery__swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide gallery__slide">
+        <div class="gallery__card">
+          <div class="gallery__card__image"><img src="./img/insta.png" alt=""></div>
+          <p class="gallery__card__text">架空の目覚ましアプリのサイト</p>
+        </div>
+      </div>
+  
+      <div class="swiper-slide gallery__slide">
+        <div class="gallery__card">
+          <div class="gallery__card__image"><img src="./img/portfolio.png" alt=""></div>
+          <p class="gallery__card__text">自作のポートフォリオサイト</p>
+        </div>
+      </div>
+  
+      <div class="swiper-slide gallery__slide">
+        <div class="gallery__card">
+          <div class="gallery__card__image"><img src="./img/solobon.png" alt=""></div>
+          <p class="gallery__card__text">企業のサイト</p>
+        </div>
+      </div>
+
+      <div class="swiper-slide gallery__slide">
+        <div class="gallery__card">
+          <div class="gallery__card__image"><img src="./img/cake.png" alt=""></div>
+          <p class="gallery__card__text">架空の洋菓子店のサイト</p>
+        </div>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div id="js-gallery-pagination" class="swiper-pagination gallery__pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div id="js-gallery-prev" class="swiper-button-prev gallery__prev"></div>
+    <div id="js-gallery-next" class="swiper-button-next gallery__next"></div>
+    
+  </div>
                 </div>
             </div>
         </div>
@@ -154,6 +200,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/style.js"></script>
 </body>
 </html>
